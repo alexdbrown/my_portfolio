@@ -1,0 +1,67 @@
+/* Import Zen Grids */
+@import "zen";
+@import "zen/background";
+
+$zen-column-count: 6;
+$zen-gutter-width: 30px;
+$zen-grid-color: #ffdede !default;
+
+
+@mixin our-border() {
+  border-width: 4px;
+  border-color: black;
+}
+
+@mixin lil-border() {
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+body {
+  font-family: Verdana, Arial, sans-serif;
+  background-color: #2f2f2f;
+  @include zen-grid-background();
+}
+
+.container {
+  @include zen-grid-container;
+}
+
+.header {
+  @include zen-grid-item(6, 1);
+  @include our-border();
+  @include zen-clear();
+}
+
+
+/* User login */
+.sidebar_left {
+  @include zen-grid-item(1, 1);
+  @include our-border();
+
+}
+
+.main_content {
+  @include zen-clear();
+  @include zen-grid-item(3, 2);
+  @include our-border();
+
+}
+
+.sidebar_right {
+  @include zen-grid-item(2, 5);
+  @include our-border();
+
+}
+
+.footer {
+  @include zen-clear();
+  @include zen-grid-item(6, 1);
+  @include our-border();
+
+}
+
+// .ordered-li {
+//   @include lil-border();
+// }
