@@ -32,6 +32,8 @@ body {
   @include zen-grid-item(6, 1);
   @include our-border();
   @include zen-clear();
+  background-color: #5A0909;
+  height: 300px;
 }
 
 
@@ -52,6 +54,7 @@ body {
 .sidebar_right {
   @include zen-grid-item(2, 5);
   @include our-border();
+  text-align: right;
 
 }
 

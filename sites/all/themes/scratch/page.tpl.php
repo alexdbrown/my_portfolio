@@ -2,7 +2,7 @@
 
   <header class="header">
     <a href="<?php print $front_page;?>">
-      <img src="/<?php print $directory;?>/images/logo.png" alt="<?php print $site_name;?>" height="47" width="217" />
+    <img src="/<?php print $directory;?>/images/logo.png" alt="<?php print $site_name;?>" height="47" width="217" /> 
     </a>
 
     <?php if ($main_menu): ?>
